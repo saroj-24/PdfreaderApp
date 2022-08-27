@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/cardviewlayout"
+    android:layout_marginTop="5dp"
+    android:layout_marginEnd="5dp"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="9dp"
+    android:layout_marginStart="5dp"
+    android:id="@+id/pdf_cardview"
+    android:layout_height="100dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="2dp"
+        android:background="@color/white6"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:id="@+id/pdf_image"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/pdf1"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pdf_name"
+            android:text="book_name"
+            android:singleLine="true"
+            android:textSize="20dp"
+            android:textStyle="normal"
+            android:layout_gravity="center"
+            android:textColor="@color/black"
+            android:ellipsize="marquee"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:padding="6dp"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
